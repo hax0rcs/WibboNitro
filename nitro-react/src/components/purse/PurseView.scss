@@ -1,0 +1,50 @@
+.nitro-purse-container {
+    font-size: $font-size-sm;
+    pointer-events: all;
+    margin-top: 5px;
+
+    .nitro-purse {
+        background-color: rgba(28, 28, 32, 0.95);
+        box-shadow: inset 0px 5px rgba(34, 34, 39, 0.6), inset 0 -4px rgba(18, 18, 21, 0.6);
+        padding: 11px 11px !important;
+    
+        .nitro-purse-subscription {
+            background-color: rgba($light, 0.1);
+        }
+    
+        .nitro-purse-button {
+            padding: 3px 17px;
+        }
+    }
+
+    .divisor {
+        border-right: 1px solid rgb(255 255 255 / 7%);
+        border-radius: 0px !important;
+        display: block;
+        height: 31px;
+        box-shadow: 1px 0 0px 0px #0a0a0a;
+    }
+
+    .nitro-purse-seasonal-currency {
+        background-color: rgba($dark, .95);
+        box-shadow: inset 0px 5px lighten(rgba($dark, .6),2.5), inset 0 -4px darken(rgba($dark, .6), 4);
+    }
+
+    .colour--1 {
+        color: #ffc52b !important;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .colour-105 {
+        color: #ce7cbf !important;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .colour-55 {
+        color: #a1dbe4 !important;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}

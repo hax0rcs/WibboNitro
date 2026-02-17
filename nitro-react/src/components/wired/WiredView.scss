@@ -1,0 +1,243 @@
+.nitro-wired {
+    width: 300px;
+
+	.wired-button {
+		background-color: #000 !important;
+		border-radius: 3px !important;
+		font-size: 11px;
+		width: 204% !important;
+		vertical-align: unset !important;
+		text-align: unset !important;
+		line-height: unset !important;
+	}
+
+	hr:not([size]) {
+		height: 2px;
+		background-color: #fff !important;
+		box-shadow: 0 1px 1px 0px inset #bbb;
+		padding: 2px;
+	}
+
+	.p-colorpicker-preview
+	{
+		width: 50px;
+		height: 50px;
+		background: linear-gradient(45deg, #292626, transparent);
+		border: 1px solid rgb(129, 128, 128);
+		border-radius: 8%;
+	}
+
+	.btn-primary {
+		background-color: #3c3f41;
+		border-radius: 50px;
+		width: 28px;
+		padding: 7px;
+		border: none !important;
+	}
+
+	.dir-options
+	{
+		display: flex !important;
+    	flex-wrap: wrap;
+	}
+	.selected-group {
+		width: 50px;
+		height: 45px;
+		padding: 2px;
+		box-shadow: 0 0 4px 1px inset #00000045;
+		border-radius: 3px;
+		background-color: #ffffff;
+		border: 1px solid #bbbbbb;
+	}
+    .icon {
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&.icon-mv-1 {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_around.png');
+		}
+		&.icon-mv-2 {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_up_down.png');
+		}
+		&.icon-mv-3 {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_left_right.png');
+		}
+		&.icon-ne {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_north_east.png');
+		}
+		&.icon-se {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_south_east.png');
+		}
+		&.icon-sw {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_south_west.png');
+		}
+		&.icon-south {
+			width: 16px;
+			height: 9px;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAAiklEQVQYlY2QMQ4DIQwEcdL5CbwAuUkLH0CUPOmKS8cDk78k2mijI7ojV2BpsSzPamUEgNvVVURebigAsp8vIzBTo+k9Y2IsJrhjUmvNqeoUTI48j3QxxsV7jy31VNynlJbvx/Ghaq3BzB6qeoA5m9mT+87+TF0557WnspdS7iPzZ9pSbyEEsJ/tP6bedDn8g0OhAAAAAElFTkSuQmCC);
+		}
+		&.icon-east {
+			width: 16px;
+			height: 9px;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAArklEQVQYlWP4//8/AzqWkpL6p6Gh8d/f398AmzyGAFiQgeEvAwPDfykpqf+Wlpa16PKM4uLiOgxI4OXLl38YGBiuMTAwMIL43NzcDLKysjccHBwip0+ffgGm7j8xGGSri4tLN9gmqCBRQEhIiEFeXn4DSTY5Ozt3gv3Mw8OjycnJqQmiQZiBgUGdgYHhH0wxNzf3fw0NjWupqam6RIeehYVFNVFBDoungIAArPEEABFbu6s4zg7CAAAAAElFTkSuQmCC);
+		}
+		&.icon-north {
+			width: 16px;
+			height: 9px;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAA70lEQVQYlWP8//8/AzLw8vJiZGVlNbh169Y5NTU1o9+/f1/Ytm0bXFFAQAADI0iTs7MzAz8/P8O1a9cYFRQU2i5fvlzx7NkzBikpKQZtbe32Dx8+VEtLS/9fv349WCMjiLC2tmYUFhbWvHPnzsYHDx6ofPv2DW4zFxcXg4KCwm1lZeWAjx8/Xv/58+d/hrq6OiYLC4smKSkpkBNwYpC8ubl5U3V1NRMTDw/P34sXL9aCnIMPgOQvXbpUy8/P/xfkvH9Q02CACYuef0hsRgZQQCBjJEPgOD09HUUNiqmMjIxYnebi4sKMzMfmFAyAHpcAFv125t4kGGMAAAAASUVORK5CYII=);
+		}
+		&.icon-west {
+			width: 16px;
+			height: 9px;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAA6UlEQVQYlWP8//8/AzIIDAxk+Pfvn+GtW7fOffr06d/Tp0+ZGdBBRkYGA0gjDFtaWtZKSUmBTALhP8hyMMwIsykzM9PgwIEDyx8/fqzx9etXmJn/GBgYNCUkJFhRbAJpcnFx6UYyHR3/w8CGhoYbhISEcGnAipkVFRVXysrKcv/8+dPq8+fPGH7GBsB+8vX1ZRQTE9M7duzYysePH6uj+UmLh4cHHIJ///5lYGZmZmACcTZv3vyfhYXlIhsbm6aOjk6dlJQUkpf/32RgYLiGglNTU1GC097entHPz89IQ0Pjv5SU1D9sQQ4And+eI/MEZ00AAAAASUVORK5CYII=);
+		}
+		&.icon-nw {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_north_west.png');
+		}
+		&.icon-rot-1 {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_rotate_clockwise.png');
+		}
+		&.icon-rot-2 {
+            width: 16px;
+            height: 9px;
+			background-image: url('@/assets/images/wired/icon_wired_rotate_counter_clockwise.png');
+		}
+	}
+
+	.nitro-wired-header {
+		color: #000;
+		margin-bottom:3px;
+
+		.nitro-wired-title, .nitro-wired-close {
+			border:1px solid rgba($black,.8);
+			background-image: linear-gradient(45deg, #00d9cb 25%, #00bdb0 25%, #00bdb0 50%, #00d9cb 50%, #00d9cb 75%, #00bdb0 75%, #00bdb0 100%);
+			background-size: 197.99px 197.99px;
+			animation: wiredSlider 3s linear infinite;
+			text-align: center;
+			box-shadow:inset 0 0 0 2px rgba($white,.6), 0 2px rgba($black,.4);
+		}
+
+		.nitro-wired-title {
+			margin-right:3px;
+		}
+
+		.nitro-wired-close {
+			min-width: 23px;
+		}
+	}
+
+	&.nitro-wired-trigger {
+		background-color: #3b2516 !important;
+		border: 1px solid #000 !important;
+		box-shadow: inset 0px -2px #50321f,
+					inset 0px -3px #86583b,
+					inset 0 0 0 1px #86583b,
+					inset 0 0 0 3px #644029,
+					inset 0 0 0 4px rgba($black,.4) !important;
+
+		.bg-light,.bg-primary {
+			background-color: transparent !important;
+		}
+
+		.bg-dark {
+			background-color: #000 !important;
+		}
+	}
+
+	&.nitro-wired-action {
+		background-color: #686868 !important;
+		border: 1px solid #000 !important;
+		box-shadow: inset 0px -2px #9d9d9d,
+					inset 0px -3px #c5c5c5,
+					inset 0 0 0 1px #c5c5c5,
+					inset 0 0 0 3px #9d9d9d,
+					inset 0 0 0 4px rgba($black,.4) !important;
+
+		.bg-light,.bg-primary {
+			background-color: transparent !important;
+		}
+
+		.bg-dark {
+			background-color: #000 !important;
+		}
+
+		&::before,
+		&::after,
+		.content-area::before,
+		.content-area::after {
+			content: '';
+			height: 6px;
+			width: 6px;
+			position: absolute;
+			background-image: url('@/assets/images/wired/card-action-corners.png');
+		}
+
+		&::before {
+			background-position: 0 0;
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			background-position: 6px 0;
+			top: 0;
+			right: 0;
+		}
+
+		.content-area {
+			&::before {
+				background-position: 0 6px;
+				bottom: 0;
+				left: 0;
+			}
+	
+			&::after {
+				background-position: 6px 6px;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+
+	&.nitro-wired-condition {
+		background-color: #cfd2dd !important;
+		border: 1px solid #000 !important;
+		box-shadow: inset 0 0 0 3px #efefef, inset 4px 4px #abaeb9 !important;
+		color: #000;
+
+		.bg-light,.bg-primary {
+			background-color: transparent !important;
+		}
+
+		.bg-dark {
+			background-color: #000 !important;
+		}
+	}
+}
+
+
+@keyframes wiredSlider {
+	0% {
+		background-position: 0 0;
+	}
+	
+	100% {
+		background-position: 0 -197.99px;
+	}
+}

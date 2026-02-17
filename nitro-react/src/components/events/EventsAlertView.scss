@@ -1,0 +1,96 @@
+.notification-alert {
+    position: fixed;
+    top: 50%;
+    left: -350px; /* Inicialmente fora da tela */
+    transform: translateY(-50%);
+    width: 350px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: left 0.5s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+
+    &.slide-in {
+        left: 20px; /* Afastado do canto esquerdo e centralizado */
+    }
+
+    &.slide-out {
+        left: -350px; /* Sai da tela para a esquerda */
+    }
+
+    .alert-header {
+        margin-bottom: 10px;
+    }
+
+    .close-button {
+        cursor: pointer;
+        color: #333;
+    }
+
+    .alert-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+
+    .alert-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 20px; /* Ajustado para se manter dentro do componente */
+        transform: translateY(-50%);
+    }
+
+    .alert-body {
+        margin-left: 80px; /* Espaço para a imagem à esquerda */
+    }
+
+    .alert-message {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .alert-button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .alert-footer {
+        margin-top: 10px;
+        align-items: center;
+        display: flex;
+    }
+
+    .author-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .author-name {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .alert-navigation {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-icon {
+            cursor: pointer;
+            color: #333;
+        }
+    }
+}

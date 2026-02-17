@@ -1,0 +1,75 @@
+.nitro-navigator {
+    width: $navigator-width;
+    height: $navigator-height;
+
+    .navigator-grid {
+
+        .navigator-item {
+
+            .badge {
+                width: 35px;
+                min-width: 35px;
+            }
+        }
+
+        &:not(.two-columns) {
+
+            .navigator-item {
+    
+                &:nth-child(odd) {
+                    background-color: rgb(79 79 79 / 19%);
+                }
+            }
+        }
+    
+        &.two-columns {
+    
+            .navigator-item {
+        
+                &:nth-child(4n-2),
+                &:nth-child(4n-3) {
+                    background: #d5edff;
+                }
+            }
+        }
+    }
+
+    .navigator-item {
+        transition: 400ms;
+        
+        &:hover {
+            background-color: #5e5e5e69 !important;
+            box-shadow: 0 0 8px 5px #e2e2e229;
+            transition: 400ms;
+        }
+    }
+}
+
+.nitro-navigator-doorbell,
+.nitro-navigator-password {
+    width: 250px;
+}
+
+.nitro-room-info {
+    width: $room-info-width;
+}
+
+.nitro-room-link {
+    width: 400px;
+}
+
+.nitro-room-settings {
+    width: 400px;
+
+    .list-container {
+        height: 100px;
+
+        .list-item {
+            background-color: $grid-active-bg-color;
+        }
+    }
+}
+
+.room-info {
+    width: 275px;
+}
